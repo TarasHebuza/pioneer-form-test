@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <div class="main-text-wrap">
+            <p class="main-text">Pioneer Does Not Share Your Information. You will only hear from us.</p>
+        </div>
+        <div class="form-wrap">
+            <form action="" class="main-form">
+                <div class="first-last-name-wrap">
+                    <div class="form-item item-first-name">
+                        <div class="item-main-content">
+                            <label class="item-label" for="first-name">First name*</label>
+                            <input class="item-input item-field" id="first-name" type="text" name="first-name" required>
+                        </div>
+                        <div class="item-error">This question is required</div>
+                    </div>
+                    <div class="form-item item-last-name">
+                        <div class="item-main-content">
+                            <label class="item-label" for="last-name">Last name*</label>
+                            <input class="item-input item-field" id="last-name" type="text" name="last-name" required>
+                        </div>
+                        <div class="item-error">This question is required</div>
+                    </div>
+                </div>
+                <div class="phone-email-wrap">
+                    <div class="form-item item-phone">
+                        <div class="item-main-content">
+                            <label class="item-label" for="phone">Phone*</label>
+                            <input class="item-input item-field" id="phone" type="tel" name="phone" required>
+                        </div>
+                        <div class="item-error">This question is required</div>
+                    </div>
+                    <div class="form-item item-email">
+                        <div class="item-main-content">
+                            <label class="item-label" for="email">Email*</label>
+                            <input class="item-input item-field" id="email" type="email" name="email" required>
+                        </div>
+                        <div class="item-error">This question is required</div>
+                    </div>
+                </div>
+                <div class="form-item item-city">
+                    <div class="item-main-content">
+                        <label class="item-label" for="city">City in Ohio*</label>
+                        <input class="item-input item-field" id="city" type="text" name="city" required>
+                    </div>
+                    <div class="item-error">This question is required</div>
+                </div>
+                <div class="form-item item-city">
+                    <div class="item-main-content">
+                        <label class="item-label" for="interested-in">Interested In*</label>
+                        <textarea class="item-textarea item-field" id="interested-in" name="interested-in" required></textarea>
+                    </div>
+                    <div class="item-error">This question is required</div>
+                </div>
+                <div class="submit-wrap">
+                    <button type="submit" class="button-submit button-submit active">Submit</button>
+                    <button type="submit" class="button-submit button-repeat">Please finish the form</button>
+                </div>
+            </form>
+
+            <div class="message-popup message-success">
+                <div class="message-wrap">
+                    <span class="text-top">Submission successful</span>
+                    <span class="text-bottom">Thanks! We have received your submission.</span>
+                </div>
+            </div>
+            
+            <div class="message-popup message-wrong">
+                <div class="message-wrap">
+                    <span class="text-top">Oops, something went wrong</span>
+                    <span class="text-bottom">Please try again later</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

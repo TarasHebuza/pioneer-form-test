@@ -1,0 +1,224 @@
+.form-wrap {
+
+}
+
+.main-text-wrap {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+}
+
+.main-text {
+    text-align: center;
+    font-family: 'Work Sans', "Helvetica Neue", Helvetica, Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #222222;
+    margin: 0;
+}
+
+.form-wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form-item {
+    font-family: 'Work Sans', "Helvetica Neue", Helvetica, Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    box-shadow: 0 1.2px 6px -2px rgba(0,0,0,0.4);
+    z-index: 1;
+    transition: all .1s linear;
+    position: relative;
+}
+
+.form-item.active {
+    box-shadow: 0 3px 15px -3px rgba(0,0,0,0.2);
+    z-index: 10;
+    background-color: #fff;
+}
+
+.item-phone,
+.item-email,
+.item-first-name,
+.item-last-name {
+    width: 50%;
+}
+
+.item-main-content {
+    padding: 22px 20px;
+}
+
+.item-label {
+    margin: 0 0 5px 0;
+    display: block;
+    font-size: 20px;
+}
+
+.item-input {
+    width: 100%;
+    min-height: 38px;
+    outline: none;
+    border: none;
+    padding: 1px;
+    border-bottom: 1px solid #ffa3a3;
+}
+
+.item-textarea {
+    width: 100%;
+    height: 105px;
+    background-color: rgba(0,0,0,0.04);
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ffa3a3;
+}
+
+.item-field {
+    font-family: 'Work Sans', "Helvetica Neue", Helvetica, Roboto, sans-serif;
+    line-height: 32px;
+    font-size: 18px;
+    caret-color: #faa92c;
+    color: #faa92c;
+    font-weight: 400;
+}
+
+.item-error {
+    visibility: hidden;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(150, 37, 3, 1);
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 18px;
+    transition: all .1s linear;
+}
+
+.item-error.active {
+    visibility: visible;
+    height: 30px;
+}
+
+.phone-email-wrap,
+.first-last-name-wrap {
+    display: flex;
+}
+
+.button-submit {
+    display: none;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(250, 169, 44, 1);
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: 'Work Sans', "Helvetica Neue", Helvetica, Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400 !important;
+    cursor: pointer;
+    box-shadow: 0 2px 6px -2px rgba(0,0,0,0.5);
+}
+
+.button-submit.active {
+    display: block;
+}
+
+.message-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.message-wrap {
+    max-width: 700px;
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 6px -2px rgba(0,0,0,0.6);
+}
+
+.message-success {
+    display: none;
+}
+
+.message-wrong {
+    display: none;
+}
+
+.text-top {
+    font-family: 'Work Sans', "Helvetica Neue", Helvetica, Roboto, sans-serif;
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-bottom {
+    font-family: 'Work Sans', "Helvetica Neue", Helvetica, Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #222;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .main-text {
+        font-size: 16px;
+    }
+
+    .item-label {
+        font-size: 18px;
+    }
+
+    .item-description {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .phone-email-wrap,
+    .first-last-name-wrap {
+        flex-wrap: wrap;
+    }
+
+    .item-phone,
+    .item-email,
+    .item-first-name,
+    .item-last-name {
+        width: 100%;
+    }
+
+    .message-wrap {
+        height: 220px;
+    }
+
+    .text-top {
+        font-size: 37px;
+    }
+    
+    .text-bottom {
+        font-size: 16px;
+    }
+}
